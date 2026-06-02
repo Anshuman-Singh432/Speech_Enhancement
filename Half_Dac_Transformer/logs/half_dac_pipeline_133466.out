@@ -1,0 +1,34 @@
+=== Running on Node: gpu09 ===
+CUDA Functional?: True
+Sun May 31 21:00:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.95.05              Driver Version: 580.95.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 NVL                Off |   00000000:C1:00.0 Off |                    0 |
+| N/A   38C    P0             93W /  400W |       0MiB /  95830MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Starting training...
+Device: cuda | AMP Precision: torch.bfloat16
+
+[INTERRUPT] Reached exactly step 100000. Pausing to verify performance...
+>>> Performance at Step 100000 | Validation Loss: 12.5373 <<<
+Mid-epoch checkpoint saved as: 'transformer_step_100000.pt'
+[PLOT ENGINE] Performance visualization metrics saved to 'training_performance.png'.
+Epoch 0 | Train Loss: 12.1698 | Val Loss: 12.3492 | Train Acc: 0.0759 | Val Acc: 0.0749
+Best transformer weights saved.
+[PLOT ENGINE] Performance visualization metrics saved to 'training_performance.png'.
+Epoch 1 | Train Loss: 11.7987 | Val Loss: 12.2976 | Train Acc: 0.0781 | Val Acc: 0.0752
+Best transformer weights saved.
